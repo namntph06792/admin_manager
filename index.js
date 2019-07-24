@@ -35,6 +35,7 @@ app.get('/dashboard', (req, res) => res.render('dashboard'));
 app.get('/page-lockscreen', (req, res) => res.render('page/page-lockscreen'));
 app.get('/profile', (req, res) => res.render('profile'));
 app.get('/inbox', (req, res) => res.render('inbox'));
+app.get('/mail-compose', (req, res) => res.render('mail-compose'));
 app.get('/chat', (req, res) => res.render('chat'));
 app.get('/calendar', (req, res) => res.render('calendar'));
 app.get('/taskboard', (req, res) => res.render('taskboard'));
