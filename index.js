@@ -34,7 +34,6 @@ app.get('/recover', (req, res) => res.render('recover'));
 app.get('/dashboard', (req, res) => res.render('dashboard'));
 app.get('/page-lockscreen', (req, res) => res.render('page/page-lockscreen'));
 app.get('/profile', (req, res) => res.render('profile'));
-// app.get('/blog-details.html', (req, res) => res.render('blog-details'));
 app.get('/inbox', (req, res) => res.render('inbox'));
 app.get('/chat', (req, res) => res.render('chat'));
 app.get('/calendar', (req, res) => res.render('calendar'));
@@ -49,12 +48,17 @@ app.get('/file-images', (req, res) => res.render('file/file-images'));
 
 //Blog
 app.get('/blog-dashboard', (req, res) => res.render('blog/blog-dashboard'));
-app.get('/blog-detail', (req, res) => res.render('blog/blog-detail'));
+app.get('/blog-details', (req, res) => res.render('blog/blog-details'));
 app.get('/blog-list', (req, res) => res.render('blog/blog-list'));
 app.get('/blog-post', (req, res) => res.render('blog/blog-post'));
+app.get('/blog-details/:id', (req, res) => res.render('blog/blog-details'));
 
 //HTML Status
 app.get('/page-404', (req, res) => res.render('page/page-404'));
 app.get('/page-403', (req, res) => res.render('page/page-403'));
 app.get('/page-500', (req, res) => res.render('page/page-500'));
 app.get('/page-503', (req, res) => res.render('page/page-503'));
+
+
+//Redirect if page not found
+app.get('*', (req, res) => res.status(404).render('page/page-404'));
