@@ -47,6 +47,12 @@ app.get('/file-documents', (req, res) => res.render('file/file-documents'));
 app.get('/file-media', (req, res) => res.render('file/file-media'));
 app.get('/file-images', (req, res) => res.render('file/file-images'));
 
+//Blog
+app.get('/blog-dashboard', (req, res) => res.render('blog/blog-dashboard'));
+app.get('/blog-detail', (req, res) => res.render('blog/blog-detail'));
+app.get('/blog-list', (req, res) => res.render('blog/blog-list'));
+app.get('/blog-post', (req, res) => res.render('blog/blog-post'));
+
 //HTML Status
 app.get('/page-404', (req, res) => res.render('page/page-404'));
 app.get('/page-403', (req, res) => res.render('page/page-403'));
