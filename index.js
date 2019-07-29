@@ -40,6 +40,9 @@ app.get('/chat', (req, res) => res.render('chat'));
 app.get('/calendar', (req, res) => res.render('calendar'));
 app.get('/taskboard', (req, res) => res.render('taskboard'));
 app.get('/map-google', (req, res) => res.render('map-google'));
+app.get('/product', (req, res) => res.render('product'));
+app.get('/order', (req, res) => res.render('order'));
+app.get('/user', (req, res) => res.render('user'));
 
 //File Manager
 app.get('/file-dashboard', (req, res) => res.render('file/file-dashboard'));
